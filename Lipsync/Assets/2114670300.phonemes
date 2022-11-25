@@ -1,0 +1,25 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Times have changed.]
+;meta[translation=tˈaɪmz hav tʃˈeɪndʒd]
+;meta[audio-hypothesis=SIL T AE K V Z IH V CH EY HH +SPN+ JH T SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+t       |  350|  425|  1.00|  2.00| ok         | t  ~  T  [  350 -  425]
+;_       |  425|  595|  1.00| -1.00| <- VERIFY! | _  d  AE [  425 -  595]
+aɪ      |  595|  635|  1.15| -1.00| <- VERIFY! | aɪ ~  K  [  595 -  635]
+m       |  635|  725|  1.00| -1.00| <- VERIFY! | m  ~  V  [  635 -  725]
+z       |  725|  785|  1.00|  2.00| ok         | z  ~  Z  [  725 -  785]
+------------------------------------------------------------------------
+h       |  785|  815|  1.00|  0.01| ok         | h  ~  IH [  785 -  815]
+;a       |  815|  815|  1.00| -1.00| <- VERIFY! | a  i
+v       |  815|  895|  1.00|  2.00| ok         | v  ~  V  [  815 -  895]
+------------------------------------------------------------------------
+tʃ      |  895| 1105|  1.00|  2.00| ok         | tʃ ~  CH [  895 - 1105]
+eɪ      | 1105| 1185|  1.15|  2.00| ok         | eɪ ~  EY [ 1105 - 1185]
+n       | 1185| 1325|  1.00| -1.00| <- VERIFY! | n  ~  HH [ 1185 - 1325]
+dʒ      | 1395| 1535|  1.00|  2.00| ok         | dʒ ~  JH [ 1395 - 1535]
+d       | 1535| 1640|  1.00|  1.70| ok         | d  ~  T  [ 1535 - 1640]

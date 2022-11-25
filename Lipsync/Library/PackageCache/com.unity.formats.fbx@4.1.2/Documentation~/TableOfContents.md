@@ -1,0 +1,10 @@
+* [FBX Exporter overview](index.md)
+* [Exporting FBX files](exporting.md)
+* [Using the FBX Recorder](recorder.md)
+* [FBX Prefab Variants](prefabs.md)
+* [Integration with 3D modeling software](integration.md)
+* [FBX Export settings](options.md)
+* Support information
+  * [Limitations](knownissues.md)
+  * [Troubleshooting](troubleshooting.md)
+  * [Upgrading from Asset Store](assetstoreUpgrade.md)
