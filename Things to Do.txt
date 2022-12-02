@@ -1,0 +1,6 @@
+Next to do:
+- Error with IPA symbol missing
+- Bulk processing, open multiple files at once and save more animation file at once
+- Optimizing, removing unnecessary parts. 
+- Documentation, flow diagram and comments on codes
+- Make video
