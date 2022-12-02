@@ -318,7 +318,7 @@
 -r:"C:/Program Files/Unity 2021.2.3f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"C:/Program Files/Unity 2021.2.3f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity 2021.2.3f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
--r:"D:/Unity Projects/_Research/Lipsync/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"D:/Unity Projects/Unity_VRoid_Lipsync/Lipsync/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Autodesk.Fbx.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Autodesk.Fbx.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
@@ -337,8 +337,13 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/AddKeysLipsync.cs"
+"Assets/Scripts/AddKeyFrame.cs"
+"Assets/Scripts/AddKeyFrameFromRadish.cs"
+"Assets/Scripts/AudioTester.cs"
+"Assets/Scripts/CreateLipsyncAnimation.cs"
 "Assets/Scripts/ReadRadish.cs"
+"Assets/Scripts/ScriptableObjects/SOPhonemeTable.cs"
+"Assets/Scripts/ScriptableObjects/SOVisemeGroups.cs"
 -langversion:9.0
 
 /deterministic

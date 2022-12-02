@@ -8,23 +8,16 @@ public class ReadRadish : MonoBehaviour
 {
     public List<PhonemeData> phonemeDataList;
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.F11))
-        {
-            GetNameList();
-        }
-    }
 
 
     /// <summary>
-    /// This is the function called to start reading names from text files
+    /// This is the function called to start reading from Radish
     /// </summary>
     /// <returns></returns>
-    public void GetNameList()
+    public void StartRead()
     {
         //In case the list is not empty, clear it all out
-        //nameList.Clear();
+        phonemeDataList.Clear();
 
         string path = OpenFileExplorer();
         if (!string.IsNullOrEmpty(path))
@@ -89,10 +82,17 @@ public class ReadRadish : MonoBehaviour
         PhonemeData temp = new PhonemeData("", 0, 0);
 
         //Read the Phoneme Symbol
-        temp.phoneme = inputLine[0] + "" + inputLine[1];
+        for (int j = 0; j < 2; j++)
+        {
+            if (inputLine[j] != ' ' && inputLine[j] != ';')
+            {
+                temp.phoneme += inputLine[j];
+            }
+        }
 
         #region Find Start number
         //Skip until we found numbers
+        int startNumber = 0;
         int i = 2;
         while (inputLine[i] != '|')
         {
@@ -113,12 +113,14 @@ public class ReadRadish : MonoBehaviour
             i++;
         }
 
+        int.TryParse(numberString, out startNumber);
+
         //Convert string to number
-        int.TryParse(numberString, out temp.start);
         #endregion
 
         #region Find End Number
         //Skip until we found numbers
+        int endNumber = 0;
         while (inputLine[i] != '|')
         {
             i++;
@@ -139,14 +141,20 @@ public class ReadRadish : MonoBehaviour
         }
         i++;
 
-        Debug.Log(numberString);
-
         //Convert string to number
-        int.TryParse(numberString, out temp.end);
+        int.TryParse(numberString, out endNumber);
         #endregion
 
-        //Add to the list
-        phonemeDataList.Add(temp);
+
+
+        //Remove any key that has the same time start and time end
+        if (startNumber != endNumber)
+        {
+            //Add to the list
+            temp.start = startNumber;
+            temp.end = endNumber;
+            phonemeDataList.Add(temp);
+        }
     }
 
 }

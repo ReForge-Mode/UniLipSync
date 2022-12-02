@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c17d3d327b2634e8f7462b7dc83ee4, type: 3}
+  m_Name: PhonemeTable
+  m_EditorClassIdentifier: 
+  phonemeGroups:
+  - ipa: "\u0251"
+    group: a
+  - ipa: h
+    group: a
+  - ipa: "\u0294"
+    group: a
+  - ipa: "\u028C"
+    group: a
+  - ipa: "\u026A"
+    group: e
+  - ipa: "\u025B"
+    group: e
+  - ipa: "\xE6"
+    group: e
+  - ipa: "\u0259"
+    group: e
+  - ipa: i
+    group: i
+  - ipa: "\u0268"
+    group: i
+  - ipa: "\u0254"
+    group: o
+  - ipa: "\u028A"
+    group: o
+  - ipa: u
+    group: u
+  - ipa: "\u0289"
+    group: u
+  - ipa: k
+    group: k
+  - ipa: "\u0261"
+    group: k
+  - ipa: "\u014B"
+    group: k
+  - ipa: j
+    group: k
+  - ipa: t
+    group: t
+  - ipa: d
+    group: t
+  - ipa: n
+    group: t
+  - ipa: "n\u0329"
+    group: t
+  - ipa: s
+    group: t
+  - ipa: z
+    group: t
+  - ipa: l
+    group: t
+  - ipa: "l\u0329"
+    group: t
+  - ipa: "\u0279"
+    group: t
+  - ipa: "\u027E"
+    group: t
+  - ipa: "\u027E\u0303"
+    group: t
+  - ipa: "\u025A"
+    group: t
+  - ipa: "\u025D"
+    group: t
+  - ipa: "\u03B8"
+    group: t
+  - ipa: "\xF0"
+    group: t
+  - ipa: f
+    group: f
+  - ipa: v
+    group: f
+  - ipa: p
+    group: p
+  - ipa: m
+    group: p
+  - ipa: "m\u0329"
+    group: p
+  - ipa: b
+    group: p
+  - ipa: w
+    group: w
+  - ipa: "\u028D"
+    group: w
+  - ipa: "\u0283"
+    group: sh
+  - ipa: "\u0292"
+    group: sh
+  - ipa: "t\u0283"
+    group: sh
+  - ipa: "d\u0292"
+    group: sh
+  - ipa: "a\u026A"
+    group: ai
+  - ipa: "o\u028A"
+    group: o
+  - ipa: "\u0254\u026A"
+    group: o
+  - ipa: "a\u028A"
+    group: aw
+  - ipa: "e\u026A"
+    group: ei
