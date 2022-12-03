@@ -343,9 +343,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/Editor/AddKeyFrameEditor.cs"
+"Assets/Scripts/Editor/CreateAnimationCurveEditor.cs"
+"Assets/Scripts/Editor/GenerateLipsyncEditor.cs"
 "Assets/Scripts/Editor/PhonemeDataEditor.cs"
-"Assets/Scripts/Editor/PhonemePairEditor.cs"
 "Assets/Scripts/Editor/ReadRadishEditor.cs"
 -langversion:9.0
 

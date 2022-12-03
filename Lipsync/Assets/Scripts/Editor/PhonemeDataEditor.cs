@@ -6,14 +6,14 @@ using UnityEngine;
 [CustomPropertyDrawer(typeof(PhonemeData))]
 public class PhonemeDataEditor : PropertyDrawer
 {
-    // Draw the property inside the given rect
+    //Draw the property inside the given rect
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
-        // Using BeginProperty / EndProperty on the parent property means that
-        // prefab override logic works on the entire property.
+        //Using BeginProperty / EndProperty on the parent property means that
+        //prefab override logic works on the entire property.
         EditorGUI.BeginProperty(position, label, property);
 
-        // Calculate rects
+        //Calculate rects
         var aRect = new Rect(position.x                           , position.y, (position.width / 5    ) - 3, position.height);
         var bRect = new Rect(position.x + (position.width     / 5), position.y, (position.width * 2 / 5) - 3, position.height);
         var cRect = new Rect(position.x + (position.width * 3 / 5), position.y, (position.width * 2 / 5) - 3, position.height);

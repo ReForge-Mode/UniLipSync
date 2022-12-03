@@ -33,7 +33,6 @@ public struct VisemeGroup
     public string name;
     public List<string> ipa;
     public Vowel start;
-    public Vowel end;
 }
 
 [System.Serializable]

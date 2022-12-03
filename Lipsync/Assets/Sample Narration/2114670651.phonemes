@@ -1,0 +1,19 @@
+;meta[language=en]
+;meta[version=2]
+;meta[text=A letter?]
+;meta[translation=ɐ lˈɛtə]
+;meta[audio-hypothesis=SIL K UH M L EH T EH R N]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+;_       |  260|  325|  1.00| -1.00| <- VERIFY! | _  d  K  [  260 -  325]
+------------------------------------------------------------------------
+ɐ       |  325|  355|  1.00|  0.50| ok         | ɐ  ~  UH [  325 -  355]
+;_       |  355|  385|  1.00| -1.00| <- VERIFY! | _  d  M  [  355 -  385]
+------------------------------------------------------------------------
+l       |  385|  490|  1.00|  2.00| ok         | l  ~  L  [  385 -  495]
+ɛ       |  490|  590|  1.15|  2.00| ok         | ɛ  ~  EH [  495 -  595]
+t       |  590|  735|  1.00|  1.00| ok         | t  ~> T  [  595 -  625] + EH [  625 -  745]
+;_       |  735|  765|  1.00| -1.00| <- VERIFY! | _  d  R  [  745 -  775]
+ə       |  765|  950|  1.00|  0.01| ok         | ə  ~  N  [  775 -  980]

@@ -1,21 +1,26 @@
 using UnityEngine;
 using System.Collections;
 using UnityEditor;
+using System.Diagnostics;
 
 [CustomEditor(typeof(ReadRadish))]
 public class ReadRadishEditor : Editor
 {
+    //This custom editor is just to make it neat and simple in the inspector
+    //Hiding all the debug private fields under a foldout menu
+
+    public bool debug;
+
     public override void OnInspectorGUI()
     {
-        //DrawDefaultInspector();
-
-        ReadRadish readRadish = (ReadRadish)target;
-        if (GUILayout.Button("Load Radish Data", GUILayout.Height(50)))
+        EditorGUI.indentLevel++;
+        debug = EditorGUILayout.Foldout(debug, "Debug");
+        if (debug)
         {
-            readRadish.StartRead();
+            EditorGUI.indentLevel++;
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("phonemeDataList"));
         }
 
-        GUI.enabled = false;
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("phonemeDataList"));
+        //DrawDefaultInspector();
     }
 }

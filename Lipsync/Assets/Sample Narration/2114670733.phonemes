@@ -1,0 +1,21 @@
+;meta[language=en]
+;meta[version=2]
+;meta[text=Are you ghosts?]
+;meta[translation=ɑː juː ɡˈəʊsts]
+;meta[audio-hypothesis=SIL AA R IY Y UW SIL K AH OW S T AE T]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+ɑ       |  290|  475|  1.00|  1.00| ok         | ɑ  ~> AA [  290 -  415] + R  [  415 -  475]
+------------------------------------------------------------------------
+j       |  475|  675|  1.00|  1.25| ok         | j  ~> IY [  475 -  565] + Y  [  565 -  675]
+u       |  675|  760|  1.00|  2.00| ok         | u  ~  UW [  675 -  760]
+------------------------------------------------------------------------
+ɡ       |  835|  880|  1.00|  1.70| ok         | ɡ  ~  K  [  820 -  865]
+əʊ      |  880|  990|  1.15|  1.00| ok         | əʊ ~> AH [  865 -  925] + OW [  925 - 1055]
+s       |  990| 1120|  1.00|  2.00| ok         | s  ~  S  [ 1055 - 1165]
+t       | 1120| 1140|  1.00|  2.00| ok         | t  ~  T  [ 1165 - 1295]
+;_       | 1140| 1175|  1.00| -1.00| <- VERIFY! | _  d  AE [ 1295 - 1345]
+s       | 1175| 1370|  1.00| -1.00| <- VERIFY! | s  ~  T  [ 1345 - 1400]

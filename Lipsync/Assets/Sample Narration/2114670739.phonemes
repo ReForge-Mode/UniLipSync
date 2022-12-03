@@ -1,0 +1,17 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Fuck you!]
+;meta[translation=fˈʌk juː]
+;meta[audio-hypothesis=SIL TH AO K IY L ER]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+f       |  290|  445|  1.00| -1.00| <- VERIFY! | f  ~  TH [  290 -  445]
+ʌ       |  445|  555|  1.15| -1.00| <- VERIFY! | ʌ  ~  AO [  445 -  555]
+k       |  555|  665|  1.00|  2.00| ok         | k  ~  K  [  555 -  665]
+------------------------------------------------------------------------
+j       |  665|  835|  1.00|  0.50| ok         | j  ~  IY [  665 -  835]
+u       |  835|  915|  1.00|  0.01| ok         | u  ~  L  [  835 -  915]
+;_       |  915| 1020|  1.00| -1.00| <- VERIFY! | _  d  ER [  915 - 1020]

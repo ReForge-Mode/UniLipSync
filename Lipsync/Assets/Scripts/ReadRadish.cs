@@ -6,30 +6,40 @@ using UnityEngine;
 
 public class ReadRadish : MonoBehaviour
 {
-    public List<PhonemeData> phonemeDataList;
+    //This script contains all processes needed to read
+    //Radish's phoneme files and convert it into a neat list.
+    //
+    //If you decided to use other similar program like Radish,
+    //you just need to modify this script
 
-
+    [SerializeField] private List<PhonemeData> phonemeDataList;
 
     /// <summary>
-    /// This is the function called to start reading from Radish
+    /// Start reading text from a directory path
     /// </summary>
-    /// <returns></returns>
-    public void StartRead()
+    /// <returns>Directory of Radish .phoneme file</returns>
+    public List<PhonemeData> StartRead(string path)
     {
         //In case the list is not empty, clear it all out
         phonemeDataList.Clear();
 
-        string path = OpenFileExplorer();
+        //Avoid error by checking if the path is blank
         if (!string.IsNullOrEmpty(path))
         {
             ReadTextFile(path);
         }
+        else
+        {
+            Debug.LogError("Phoneme Path is Empty!");
+        }
+
+        return phonemeDataList;
     }
 
     /// <summary>
-    /// This is the function to read the file line by line
+    /// Start the Input/Output process for .phoneme files
     /// </summary>
-    /// <param name="file_path"></param>
+    /// <param name="file_path"> The path of the Radish .phoneme file</param>
     private void ReadTextFile(string file_path)
     {
         StreamReader inputStream = new StreamReader(file_path);
@@ -39,9 +49,10 @@ public class ReadRadish : MonoBehaviour
         {
             string inputLine = inputStream.ReadLine();
 
-            //Skip metadata
+            //Skip the header metadata of the Radish .phoneme files
             if (hasSkippedMetadata == false)
             {
+                //We only start reading after the ---- line
                 if (inputLine.Contains("-----"))
                 {
                     hasSkippedMetadata = true;
@@ -59,29 +70,22 @@ public class ReadRadish : MonoBehaviour
     }
 
     /// <summary>
-    /// This is the function that will open the windows dialogue to find the text file
-    /// </summary>
-    /// <returns></returns>
-    private string OpenFileExplorer()
-    {
-        return EditorUtility.OpenFilePanel("Find Text File (.phonemes)", "", "phonemes");
-    }
-
-    /// <summary>
-    /// This is the function to handle what to do per line in the text file
+    /// Now, we handle the .phoneme file line by line
     /// </summary>
     /// <param name="inputLine"></param>
     private void HandleInputPerLine(string inputLine)
     {
-        //Skip spacebars and :_ for some reason
+        //Skip ---- line and ;_ field
+        //In the .phoneme files, the ---- line separates each word
+        //But I dpn't know what ;_ was supposed to mean...
+
         if (inputLine[0] == '-' || inputLine.Contains(";_"))
         {
             return;
         }
 
+        //Read the Phoneme Symbol. it is usually just two letters long
         PhonemeData temp = new PhonemeData("", 0, 0);
-
-        //Read the Phoneme Symbol
         for (int j = 0; j < 2; j++)
         {
             if (inputLine[j] != ' ' && inputLine[j] != ';')
@@ -90,8 +94,8 @@ public class ReadRadish : MonoBehaviour
             }
         }
 
-        #region Find Start number
-        //Skip until we found numbers
+        #region Find the Start timestamp, where this phoneme is spoken
+        //Skip forward until we found numbers
         int startNumber = 0;
         int i = 2;
         while (inputLine[i] != '|')
@@ -103,7 +107,6 @@ public class ReadRadish : MonoBehaviour
 
         //Get the number
         string numberString = "";
-
         while (inputLine[i] != '|')
         {
             if (inputLine[i] != ' ')
@@ -113,13 +116,12 @@ public class ReadRadish : MonoBehaviour
             i++;
         }
 
+        //Convert string to an integer number
         int.TryParse(numberString, out startNumber);
-
-        //Convert string to number
         #endregion
 
-        #region Find End Number
-        //Skip until we found numbers
+        #region Find the End timestamp, where this phoneme stopped being spoken
+        //Skip forward until we found numbers
         int endNumber = 0;
         while (inputLine[i] != '|')
         {
@@ -130,7 +132,6 @@ public class ReadRadish : MonoBehaviour
 
         //Get the number
         numberString = "";
-
         while (inputLine[i] != '|')
         {
             if (inputLine[i] != ' ')
@@ -141,13 +142,12 @@ public class ReadRadish : MonoBehaviour
         }
         i++;
 
-        //Convert string to number
+        //Convert string to integer number
         int.TryParse(numberString, out endNumber);
         #endregion
 
-
-
-        //Remove any key that has the same time start and time end
+        //Sometimes, there are phonemes that are read by Radish with zero duration
+        //Remove any phoneme that has the same start timestamp and end timestamp
         if (startNumber != endNumber)
         {
             //Add to the list
@@ -155,13 +155,16 @@ public class ReadRadish : MonoBehaviour
             temp.end = endNumber;
             phonemeDataList.Add(temp);
         }
-    }
 
+        //That's what we do in every line of the .phoneme files!
+    }
 }
 
 [System.Serializable]
 public struct PhonemeData
 {
+    //This phoneme data struct is just to make the data appear tidier
+
     public string phoneme;
     public int start;
     public int end;

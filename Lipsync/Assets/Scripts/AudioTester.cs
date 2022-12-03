@@ -6,20 +6,22 @@ using UnityEngine;
 public class AudioTester : MonoBehaviour
 {
     public Animator anim;
-    public AudioSource audioData;
+    public AudioClip audioClip;
+    private AudioSource audioSource;
 
-    private void Start()
+    private void OnValidate()
     {
-        audioData = GetComponent<AudioSource>();
-        
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = audioClip;
     }
 
     private void OnGUI()
     {
         if (GUI.Button(new Rect(10, 70, 150, 30), "Play"))
         {
-            anim.SetTrigger("A");
-            audioData.Play(0);
+            //anim.SetTrigger("A");
+            anim.Play(audioClip.name.Substring(0, 10));
+            audioSource.Play(0);
         }
     }
 }

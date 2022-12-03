@@ -16,10 +16,27 @@ MonoBehaviour:
   - name: a
     ipa:
     - "\u0251"
-    - "\u028C"
-    - h
-    - "\u0294"
     - a
+    - "\u0252"
+    start:
+      a: 100
+      i: 0
+      u: 30
+      e: 0
+      o: 40
+    end:
+      a: 0
+      i: 0
+      u: 0
+      e: 0
+      o: 0
+  - name: ah
+    ipa:
+    - "\u0259"
+    - h
+    - "\u025B"
+    - "\xE6"
+    - "\u0259l"
     start:
       a: 100
       i: 0
@@ -32,73 +49,73 @@ MonoBehaviour:
       u: 0
       e: 0
       o: 0
-  - name: e
-    ipa:
-    - "\u026A"
-    - "\u025B"
-    - "\xE6"
-    - "\u0259"
-    start:
-      a: 5
-      i: 0
-      u: 0
-      e: 100
-      o: 0
-    end:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
-      o: 0
-  - name: i
-    ipa:
-    - i
-    - "\u0268"
-    start:
-      a: 5
-      i: 100
-      u: 0
-      e: 0
-      o: 0
-    end:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
-      o: 0
-  - name: o
+  - name: ao
     ipa:
     - "\u0254"
+    - "a\u028A"
+    - "\u0259\u028A"
+    - "o\u028A"
+    - "e\u0259"
+    - "\u0294"
+    - "\u028C"
+    - "\u0254\u026A"
     - "\u028A"
+    - u
+    - "\u0289"
+    - w
+    - "\u028D"
+    - "\u0250"
+    - "\u028A\u0259"
     start:
-      a: 0
+      a: 40
       i: 0
-      u: 50
-      e: 0
-      o: 100
+      u: 75
+      e: 50
+      o: 0
     end:
       a: 0
       i: 0
       u: 0
       e: 0
       o: 0
-  - name: u
+  - name: ih
     ipa:
-    - u
-    - "\u0289"
+    - "\u026A"
+    - "a\u026A"
+    - "\u0268"
+    start:
+      a: 50
+      i: 0
+      u: 0
+      e: 0
+      o: 0
+    end:
+      a: 0
+      i: 0
+      u: 0
+      e: 0
+      o: 0
+  - name: er
+    ipa:
+    - "\u0279"
+    - "\u025D"
+    - "\u025A"
+    - "\u027E"
+    - "\u027E\u0303"
+    - "\u025C"
     start:
       a: 0
       i: 0
       u: 100
-      e: 0
-      o: 10
+      e: 40
+      o: 0
     end:
       a: 0
       i: 0
       u: 0
       e: 0
       o: 0
-  - name: b
+  - name: p
     ipa:
     - p
     - m
@@ -116,56 +133,49 @@ MonoBehaviour:
       u: 0
       e: 0
       o: 0
-  - name: t
+  - name: n
     ipa:
-    - t
-    - d
     - n
     - "n\u0329"
-    - s
+    - "\u014B"
+    - "\xF0"
+    - d
+    - "\u0261"
+    - t
     - z
+    - "\u0292"
+    - "\u03B8"
+    - k
+    - s
+    - "e\u026A"
+    - j
+    - i
     - l
     - "l\u0329"
+    - "i\u0259"
     start:
-      a: 25
-      i: 0
+      a: 15
+      i: 20
       u: 0
       e: 0
-      o: 0
+      o: 25
     end:
       a: 0
       i: 0
       u: 0
       e: 0
       o: 0
-  - name: sh
+  - name: j
     ipa:
-    - "l\u0329"
-    - "\u0292"
     - "t\u0283"
     - "d\u0292"
+    - "\u0283"
     start:
       a: 0
-      i: 50
-      u: 75
+      i: 25
+      u: 55
       e: 0
-      o: 50
-    end:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
-      o: 0
-  - name: w
-    ipa:
-    - w
-    - "\u028D"
-    start:
-      a: 0
-      i: 50
-      u: 40
-      e: 0
-      o: 50
+      o: 30
     end:
       a: 0
       i: 0
@@ -178,141 +188,13 @@ MonoBehaviour:
     - v
     start:
       a: 0
-      i: 0
-      u: 75
-      e: 0
-      o: 20
-    end:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
-      o: 0
-  - name: th
-    ipa:
-    - "\u03B8"
-    - "\xF0"
-    start:
-      a: 25
-      i: 0
-      u: 20
+      i: 30
+      u: 30
       e: 0
       o: 0
     end:
       a: 0
       i: 0
-      u: 0
-      e: 0
-      o: 0
-  - name: r
-    ipa:
-    - "\u0279"
-    - "\u027E"
-    - "\u027E\u0303"
-    - "\u025A"
-    - "\u025D"
-    start:
-      a: 25
-      i: 0
-      u: 20
-      e: 0
-      o: 0
-    end:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
-      o: 0
-  - name: ng
-    ipa:
-    - k
-    - "\u0261"
-    - "\u014B"
-    - j
-    start:
-      a: 25
-      i: 0
-      u: 20
-      e: 0
-      o: 0
-    end:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
-      o: 0
-  - name: ai
-    ipa:
-    - "a\u026A"
-    start:
-      a: 100
-      i: 0
-      u: 0
-      e: 0
-      o: 0
-    end:
-      a: 10
-      i: 50
-      u: 0
-      e: 0
-      o: 0
-  - name: ou
-    ipa:
-    - "o\u028A"
-    start:
-      a: 0
-      i: 0
-      u: 50
-      e: 0
-      o: 100
-    end:
-      a: 0
-      i: 0
-      u: 100
-      e: 0
-      o: 10
-  - name: au
-    ipa:
-    - "a\u028A"
-    start:
-      a: 100
-      i: 0
-      u: 0
-      e: 0
-      o: 0
-    end:
-      a: 0
-      i: 0
-      u: 100
-      e: 0
-      o: 10
-  - name: oi
-    ipa:
-    - "\u0254\u026A"
-    start:
-      a: 0
-      i: 0
-      u: 50
-      e: 0
-      o: 100
-    end:
-      a: 5
-      i: 100
-      u: 0
-      e: 0
-      o: 0
-  - name: ei
-    ipa:
-    - "e\u026A"
-    start:
-      a: 5
-      i: 0
-      u: 0
-      e: 100
-      o: 0
-    end:
-      a: 5
-      i: 100
       u: 0
       e: 0
       o: 0

@@ -337,12 +337,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/AddKeyFrame.cs"
-"Assets/Scripts/AddKeyFrameFromRadish.cs"
 "Assets/Scripts/AudioTester.cs"
-"Assets/Scripts/CreateLipsyncAnimation.cs"
+"Assets/Scripts/CreateAnimationCurve.cs"
+"Assets/Scripts/GenerateLipsync.cs"
 "Assets/Scripts/ReadRadish.cs"
-"Assets/Scripts/ScriptableObjects/SOPhonemeTable.cs"
 "Assets/Scripts/ScriptableObjects/SOVisemeGroups.cs"
 -langversion:9.0
 
