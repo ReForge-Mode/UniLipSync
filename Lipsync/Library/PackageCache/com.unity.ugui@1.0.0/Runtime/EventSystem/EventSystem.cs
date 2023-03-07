@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
@@ -221,6 +222,7 @@ namespace UnityEngine.EventSystems
                     return rhs.module.renderOrderPriority.CompareTo(lhs.module.renderOrderPriority);
             }
 
+            // Renderer sorting
             if (lhs.sortingLayer != rhs.sortingLayer)
             {
                 // Uses the layer value to properly compare the relative order of the layers.
@@ -238,6 +240,17 @@ namespace UnityEngine.EventSystems
 
             if (lhs.distance != rhs.distance)
                 return lhs.distance.CompareTo(rhs.distance);
+
+            #if PACKAGE_PHYSICS2D
+			// Sorting group
+            if (lhs.sortingGroupID != SortingGroup.invalidSortingGroupID && rhs.sortingGroupID != SortingGroup.invalidSortingGroupID)
+            {
+                if (lhs.sortingGroupID != rhs.sortingGroupID)
+                    return lhs.sortingGroupID.CompareTo(rhs.sortingGroupID);
+                if (lhs.sortingGroupOrder != rhs.sortingGroupOrder)
+                    return rhs.sortingGroupOrder.CompareTo(lhs.sortingGroupOrder);
+            }
+            #endif
 
             return lhs.index.CompareTo(rhs.index);
         }
@@ -311,6 +324,8 @@ namespace UnityEngine.EventSystems
             return m_CurrentInputModule != null && m_CurrentInputModule.IsPointerOverGameObject(pointerId);
         }
 
+        // This code is disabled unless the UI Toolkit package or the com.unity.modules.uielements module are present.
+        // The UIElements module is always present in the Editor but it can be stripped from a project build if unused.
 #if PACKAGE_UITOOLKIT
         private struct UIToolkitOverrideConfig
         {
@@ -375,24 +390,11 @@ namespace UnityEngine.EventSystems
         }
 
 #if PACKAGE_UITOOLKIT
-        private void CreateUIToolkitPanelGameObject(BaseRuntimePanel panel)
+        private bool m_Started;
+        private bool m_IsTrackingUIToolkitPanels;
+
+        private void StartTrackingUIToolkitPanels()
         {
-            if (panel.selectableGameObject == null)
-            {
-                var go = new GameObject(panel.name, typeof(PanelEventHandler), typeof(PanelRaycaster));
-                go.transform.SetParent(transform);
-                panel.selectableGameObject = go;
-                panel.destroyed += () => Destroy(go);
-            }
-        }
-
-#endif
-
-        protected override void Start()
-        {
-            base.Start();
-
-#if PACKAGE_UITOOLKIT
             if (createUIToolkitPanelGameObjectsOnStart)
             {
                 foreach (BaseRuntimePanel panel in UIElementsRuntimeUtility.GetSortedPlayerPanels())
@@ -400,17 +402,39 @@ namespace UnityEngine.EventSystems
                     CreateUIToolkitPanelGameObject(panel);
                 }
                 UIElementsRuntimeUtility.onCreatePanel += CreateUIToolkitPanelGameObject;
+                m_IsTrackingUIToolkitPanels = true;
             }
-#endif
         }
 
-        protected override void OnDestroy()
+        private void StopTrackingUIToolkitPanels()
         {
-#if PACKAGE_UITOOLKIT
-            UIElementsRuntimeUtility.onCreatePanel -= CreateUIToolkitPanelGameObject;
+            if (m_IsTrackingUIToolkitPanels)
+            {
+                UIElementsRuntimeUtility.onCreatePanel -= CreateUIToolkitPanelGameObject;
+                m_IsTrackingUIToolkitPanels = false;
+            }
+        }
+
+        private void CreateUIToolkitPanelGameObject(BaseRuntimePanel panel)
+        {
+            if (panel.selectableGameObject == null)
+            {
+                var go = new GameObject(panel.name, typeof(PanelEventHandler), typeof(PanelRaycaster));
+                go.transform.SetParent(transform);
+                panel.selectableGameObject = go;
+                panel.destroyed += () => DestroyImmediate(go);
+            }
+        }
 #endif
 
-            base.OnDestroy();
+        protected override void Start()
+        {
+            base.Start();
+
+#if PACKAGE_UITOOLKIT
+            m_Started = true;
+            StartTrackingUIToolkitPanels();
+#endif
         }
 
         protected override void OnEnable()
@@ -419,6 +443,10 @@ namespace UnityEngine.EventSystems
             m_EventSystems.Add(this);
 
 #if PACKAGE_UITOOLKIT
+            if (m_Started && !m_IsTrackingUIToolkitPanels)
+            {
+                StartTrackingUIToolkitPanels();
+            }
             if (sendUIToolkitEvents)
             {
                 UIElementsRuntimeUtility.RegisterEventSystem(this);
@@ -429,6 +457,7 @@ namespace UnityEngine.EventSystems
         protected override void OnDisable()
         {
 #if PACKAGE_UITOOLKIT
+            StopTrackingUIToolkitPanels();
             UIElementsRuntimeUtility.UnregisterEventSystem(this);
 #endif
 

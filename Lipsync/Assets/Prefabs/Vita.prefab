@@ -5639,7 +5639,7 @@ MonoBehaviour:
   Description: {fileID: 11400000, guid: 9d03f76e69f727b4ea7278fda2b65d4e, type: 2}
 --- !u!95 &5593059646571894869
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5656,7 +5656,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &7456575899178334388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5893,7 +5893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69ea1f88e8d74e04e9341465573a4ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Interval: 7
+  Interval: 20
   ClosingTime: 0.06
   OpeningSeconds: 0.03
   CloseSeconds: 0.1

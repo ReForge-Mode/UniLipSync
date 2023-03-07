@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 #if PACKAGE_TILEMAP
 using UnityEngine.Tilemaps;
@@ -89,15 +90,26 @@ namespace UnityEngine.EventSystems
                     {
                         gameObject = m_Hits[b].collider.gameObject,
                         module = this,
-                        distance = Vector3.Distance(eventCamera.transform.position, m_Hits[b].point),
+                        distance = m_Hits[b].distance,
                         worldPosition = m_Hits[b].point,
                         worldNormal = m_Hits[b].normal,
                         screenPosition = eventData.position,
                         displayIndex = displayIndex,
                         index = resultAppendList.Count,
-                        sortingLayer =  r2d != null ? r2d.sortingLayerID : 0,
+                        sortingGroupID = r2d != null ? r2d.sortingGroupID : SortingGroup.invalidSortingGroupID,
+                        sortingGroupOrder = r2d != null ? r2d.sortingGroupOrder : 0,
+                        sortingLayer = r2d != null ? r2d.sortingLayerID : 0,
                         sortingOrder = r2d != null ? r2d.sortingOrder : 0
                     };
+
+                    if (result.sortingGroupID != SortingGroup.invalidSortingGroupID &&
+                        SortingGroup.GetSortingGroupByIndex(r2d.sortingGroupID) is SortingGroup sortingGroup)
+                    {
+                        result.distance = Vector3.Distance(sortingGroup.transform.position, ray.origin);
+                        result.sortingLayer = sortingGroup.sortingLayerID;
+                        result.sortingOrder = sortingGroup.sortingOrder;
+                    }
+
                     resultAppendList.Add(result);
                 }
             }

@@ -157,6 +157,8 @@ namespace UnityEngine.UI
 
         [SerializeField] private bool m_RaycastTarget = true;
 
+        private bool m_RaycastTargetCache = true;
+
         /// <summary>
         /// Should this graphic be considered a target for raycasting?
         /// </summary>
@@ -178,6 +180,7 @@ namespace UnityEngine.UI
                     if (m_RaycastTarget && isActiveAndEnabled)
                         GraphicRegistry.RegisterRaycastGraphicForCanvas(canvas, this);
                 }
+                m_RaycastTargetCache = value;
             }
         }
 
@@ -261,6 +264,7 @@ namespace UnityEngine.UI
             }
 
             SetVerticesDirty();
+            SetRaycastDirty();
         }
 
         /// <summary>
@@ -316,6 +320,19 @@ namespace UnityEngine.UI
                 m_OnDirtyMaterialCallback();
         }
 
+        public void SetRaycastDirty()
+        {
+            if (m_RaycastTargetCache != m_RaycastTarget)
+            {
+                if (m_RaycastTarget && isActiveAndEnabled)
+                    GraphicRegistry.RegisterRaycastGraphicForCanvas(canvas, this);
+
+                else if (!m_RaycastTarget)
+                    GraphicRegistry.UnregisterRaycastGraphicForCanvas(canvas, this);
+            }
+            m_RaycastTargetCache = m_RaycastTarget;
+        }
+
         protected override void OnRectTransformDimensionsChange()
         {
             if (gameObject.activeInHierarchy)
@@ -333,7 +350,7 @@ namespace UnityEngine.UI
 
         protected override void OnBeforeTransformParentChanged()
         {
-            GraphicRegistry.UnregisterGraphicForCanvas(canvas, this);
+            GraphicRegistry.DisableGraphicForCanvas(canvas, this);
             LayoutRebuilder.MarkLayoutForRebuild(rectTransform);
         }
 
@@ -489,13 +506,13 @@ namespace UnityEngine.UI
         {
             get
             {
-                var components = ListPool<Component>.Get();
-                GetComponents(typeof(IMaterialModifier), components);
+                var components = ListPool<IMaterialModifier>.Get();
+                GetComponents<IMaterialModifier>(components);
 
                 var currentMat = material;
                 for (var i = 0; i < components.Count; i++)
                     currentMat = (components[i] as IMaterialModifier).GetModifiedMaterial(currentMat);
-                ListPool<Component>.Release(components);
+                ListPool<IMaterialModifier>.Release(components);
                 return currentMat;
             }
         }
@@ -544,8 +561,8 @@ namespace UnityEngine.UI
 #if UNITY_EDITOR
             GraphicRebuildTracker.UnTrackGraphic(this);
 #endif
-            GraphicRegistry.UnregisterGraphicForCanvas(canvas, this);
-            CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(this);
+            GraphicRegistry.DisableGraphicForCanvas(canvas, this);
+            CanvasUpdateRegistry.DisableCanvasElementForRebuild(this);
 
             if (canvasRenderer != null)
                 canvasRenderer.Clear();
@@ -557,6 +574,11 @@ namespace UnityEngine.UI
 
         protected override void OnDestroy()
         {
+#if UNITY_EDITOR
+            GraphicRebuildTracker.UnTrackGraphic(this);
+#endif
+            GraphicRegistry.UnregisterGraphicForCanvas(canvas, this);
+            CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(this);
             if (m_CachedMesh)
                 Destroy(m_CachedMesh);
             m_CachedMesh = null;
@@ -573,7 +595,10 @@ namespace UnityEngine.UI
             m_Canvas = null;
 
             if (!IsActive())
+            {
+                GraphicRegistry.UnregisterGraphicForCanvas(currentCanvas, this);
                 return;
+            }
 
             CacheCanvas();
 
@@ -720,7 +745,6 @@ namespace UnityEngine.UI
                 {
                     s_Mesh = new Mesh();
                     s_Mesh.name = "Shared UI Mesh";
-                    s_Mesh.hideFlags = HideFlags.HideAndDontSave;
                 }
                 return s_Mesh;
             }
@@ -845,6 +869,9 @@ namespace UnityEngine.UI
                     var group = components[i] as CanvasGroup;
                     if (group != null)
                     {
+                        if (!group.enabled)
+                            continue;
+
                         if (ignoreParentGroups == false && group.ignoreParentGroups)
                         {
                             ignoreParentGroups = true;

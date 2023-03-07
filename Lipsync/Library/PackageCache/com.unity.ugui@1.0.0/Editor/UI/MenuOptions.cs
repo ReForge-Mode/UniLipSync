@@ -12,16 +12,15 @@ namespace UnityEditor.UI
 
     static internal class MenuOptions
     {
-        enum MenuOptionsPriorityOrder
-        {
-            // 2000 - Text (TMP 4.0)
+        enum MenuOptionsPriorityOrder {
+            // 2000 - Text (TMP)
             Image = 2001,
             RawImage = 2002,
             Panel = 2003,
-            // 2020 - Button (TMP 4.0)
+            // 2020 - Button (TMP)
             Toggle = 2021,
-            // 2022 - Dropdown (TMP 4.0)
-            // 2023 - Input Field (TMP 4.0)
+            // 2022 - Dropdown (TMP)
+            // 2023 - Input Field (TMP)
             Slider = 2024,
             Scrollbar = 2025,
             ScrollView = 2026,
@@ -202,15 +201,6 @@ namespace UnityEditor.UI
 
         // Graphic elements
 
-        [MenuItem("GameObject/UI/Legacy/Text", false, (int)MenuOptionsPriorityOrder.Text)]
-        static public void AddText(MenuCommand menuCommand)
-        {
-            GameObject go;
-            using (new FactorySwapToEditor())
-                go = DefaultControls.CreateText(GetStandardResources());
-            PlaceUIElementRoot(go, menuCommand);
-        }
-
         [MenuItem("GameObject/UI/Image", false, (int)MenuOptionsPriorityOrder.Image)]
         static public void AddImage(MenuCommand menuCommand)
         {
@@ -229,18 +219,23 @@ namespace UnityEditor.UI
             PlaceUIElementRoot(go, menuCommand);
         }
 
-        // Controls
-
-        // Button and toggle are controls you just click on.
-
-        [MenuItem("GameObject/UI/Legacy/Button", false, (int)MenuOptionsPriorityOrder.Button)]
-        static public void AddButton(MenuCommand menuCommand)
+        [MenuItem("GameObject/UI/Panel", false, (int)MenuOptionsPriorityOrder.Panel)]
+        static public void AddPanel(MenuCommand menuCommand)
         {
             GameObject go;
             using (new FactorySwapToEditor())
-                go = DefaultControls.CreateButton(GetStandardResources());
+                go = DefaultControls.CreatePanel(GetStandardResources());
             PlaceUIElementRoot(go, menuCommand);
+
+            // Panel is special, we need to ensure there's no padding after repositioning.
+            RectTransform rect = go.GetComponent<RectTransform>();
+            rect.anchoredPosition = Vector2.zero;
+            rect.sizeDelta = Vector2.zero;
         }
+
+        // Controls
+
+        // Toggle is a control you just click on.
 
         [MenuItem("GameObject/UI/Toggle", false, (int)MenuOptionsPriorityOrder.Toggle)]
         static public void AddToggle(MenuCommand menuCommand)
@@ -271,23 +266,12 @@ namespace UnityEditor.UI
             PlaceUIElementRoot(go, menuCommand);
         }
 
-        // More advanced controls below
-
-        [MenuItem("GameObject/UI/Legacy/Dropdown", false, (int)MenuOptionsPriorityOrder.Dropdown)]
-        static public void AddDropdown(MenuCommand menuCommand)
+        [MenuItem("GameObject/UI/Scroll View", false, (int)MenuOptionsPriorityOrder.ScrollView)]
+        static public void AddScrollView(MenuCommand menuCommand)
         {
             GameObject go;
             using (new FactorySwapToEditor())
-                go = DefaultControls.CreateDropdown(GetStandardResources());
-            PlaceUIElementRoot(go, menuCommand);
-        }
-
-        [MenuItem("GameObject/UI/Legacy/Input Field", false, (int)MenuOptionsPriorityOrder.InputField)]
-        public static void AddInputField(MenuCommand menuCommand)
-        {
-            GameObject go;
-            using (new FactorySwapToEditor())
-                go = DefaultControls.CreateInputField(GetStandardResources());
+                go = DefaultControls.CreateScrollView(GetStandardResources());
             PlaceUIElementRoot(go, menuCommand);
         }
 
@@ -309,26 +293,41 @@ namespace UnityEditor.UI
             Selection.activeGameObject = go;
         }
 
-        [MenuItem("GameObject/UI/Panel", false, (int)MenuOptionsPriorityOrder.Panel)]
-        static public void AddPanel(MenuCommand menuCommand)
+        // Legacy Elements
+
+        [MenuItem("GameObject/UI/Legacy/Text", false, (int)MenuOptionsPriorityOrder.Text)]
+        static public void AddText(MenuCommand menuCommand)
         {
             GameObject go;
             using (new FactorySwapToEditor())
-                go = DefaultControls.CreatePanel(GetStandardResources());
+                go = DefaultControls.CreateText(GetStandardResources());
             PlaceUIElementRoot(go, menuCommand);
-
-            // Panel is special, we need to ensure there's no padding after repositioning.
-            RectTransform rect = go.GetComponent<RectTransform>();
-            rect.anchoredPosition = Vector2.zero;
-            rect.sizeDelta = Vector2.zero;
         }
 
-        [MenuItem("GameObject/UI/Scroll View", false, (int)MenuOptionsPriorityOrder.ScrollView)]
-        static public void AddScrollView(MenuCommand menuCommand)
+        [MenuItem("GameObject/UI/Legacy/Button", false, (int)MenuOptionsPriorityOrder.Button)]
+        static public void AddButton(MenuCommand menuCommand)
         {
             GameObject go;
             using (new FactorySwapToEditor())
-                go = DefaultControls.CreateScrollView(GetStandardResources());
+                go = DefaultControls.CreateButton(GetStandardResources());
+            PlaceUIElementRoot(go, menuCommand);
+        }
+
+        [MenuItem("GameObject/UI/Legacy/Dropdown", false, (int)MenuOptionsPriorityOrder.Dropdown)]
+        static public void AddDropdown(MenuCommand menuCommand)
+        {
+            GameObject go;
+            using (new FactorySwapToEditor())
+                go = DefaultControls.CreateDropdown(GetStandardResources());
+            PlaceUIElementRoot(go, menuCommand);
+        }
+
+        [MenuItem("GameObject/UI/Legacy/Input Field", false, (int)MenuOptionsPriorityOrder.InputField)]
+        public static void AddInputField(MenuCommand menuCommand)
+        {
+            GameObject go;
+            using (new FactorySwapToEditor())
+                go = DefaultControls.CreateInputField(GetStandardResources());
             PlaceUIElementRoot(go, menuCommand);
         }
 

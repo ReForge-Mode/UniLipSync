@@ -224,6 +224,16 @@ namespace UnityEngine.EventSystems
         /// <seealso cref="UnityEngine.UIElements.IPointerEvent" />
         public float twist { get; set; }
         /// <summary>
+        /// Specifies the angle of the pen relative to the X & Y axis, in radians.
+        /// </summary>
+        /// <seealso cref="UnityEngine.UIElements.IPointerEvent" />
+        public Vector2 tilt { get; set; }
+        /// <summary>
+        /// Specifies the state of the pen. For example, whether the pen is in contact with the screen or tablet, whether the pen is inverted, and whether buttons are pressed.
+        /// </summary>
+        /// <seealso cref="UnityEngine.UIElements.IPointerEvent" />
+        public PenStatus penStatus { get; set; }
+        /// <summary>
         /// An estimate of the radius of a touch.
         /// </summary>
         /// <remarks>
@@ -238,6 +248,14 @@ namespace UnityEngine.EventSystems
         /// Add this value to the radius to get the maximum touch radius, subtract it to get the minimum touch radius.
         /// </remarks>
         public Vector2 radiusVariance { get; set; }
+        /// <summary>
+        /// Specifies in the case of a pointer exit if the pointer has fully exited the area or if it has just entered a child.
+        /// </summary>
+        public bool fullyExited { get; set; }
+        /// <summary>
+        /// Specifies in the case of a pointer enter if the pointer has entered a new area or if it has just reentered a parent after leaving a child.
+        /// </summary>
+        public bool reentered { get; set; }
         /// <seealso cref="UnityEngine.UIElements.IPointerEvent" />
 
         public PointerEventData(EventSystem eventSystem) : base(eventSystem)
@@ -261,6 +279,8 @@ namespace UnityEngine.EventSystems
             altitudeAngle = 0f;
             azimuthAngle = 0f;
             twist = 0f;
+            tilt = new Vector2(0f, 0f);
+            penStatus = PenStatus.None;
             radius = Vector2.zero;
             radiusVariance = Vector2.zero;
         }
@@ -333,6 +353,8 @@ namespace UnityEngine.EventSystems
             sb.AppendLine("<b>altitudeAngle</b>: " + altitudeAngle);
             sb.AppendLine("<b>azimuthAngle</b>: " + azimuthAngle);
             sb.AppendLine("<b>twist</b>: " + twist);
+            sb.AppendLine("<b>tilt</b>: " + tilt);
+            sb.AppendLine("<b>penStatus</b>: " + penStatus);
             sb.AppendLine("<b>radius</b>: " + radius);
             sb.AppendLine("<b>radiusVariance</b>: " + radiusVariance);
             return sb.ToString();

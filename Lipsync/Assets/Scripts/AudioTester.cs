@@ -5,23 +5,25 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class AudioTester : MonoBehaviour
 {
-    public Animator anim;
+    public Animator animator;
     public AudioClip audioClip;
+
     private AudioSource audioSource;
 
     private void OnValidate()
     {
+        //Change the audio clip when user drag in new audio file
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClip;
     }
 
-    private void OnGUI()
+    public void PlaySoundWithLipSync()
     {
-        if (GUI.Button(new Rect(10, 70, 150, 30), "Play"))
-        {
-            //anim.SetTrigger("A");
-            anim.Play(audioClip.name.Substring(0, 10));
-            audioSource.Play(0);
-        }
+        //Play the Animation STate from beginning even if it's playing
+        animator.Play(audioClip.name.Substring(0, 10), 1, 0);
+
+        //Play the Voice Over audio, restart it if needed
+        if (audioSource.isPlaying) audioSource.Stop();
+        audioSource.Play(0);
     }
 }

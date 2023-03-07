@@ -159,6 +159,7 @@ namespace UnityEngine.UI
         {
             SetMaterialDirty();
             SetVerticesDirty();
+            SetRaycastDirty();
         }
     }
 }

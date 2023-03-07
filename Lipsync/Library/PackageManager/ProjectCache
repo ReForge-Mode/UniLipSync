@@ -5,23 +5,88 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637887943121643788
-    m_Hash: 3852283941
+      ticks: 638135284448807913
+    m_Hash: 3584490246
   m_LockFileStatus:
     m_FilePath: D:/Unity Projects/Unity_VRoid_Lipsync/Lipsync/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637887943122239694
-    m_Hash: 108291054
+      ticks: 638135285988224654
+    m_Hash: 1087545282
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: D:/Unity Projects/Unity_VRoid_Lipsync/Lipsync/Packages
-m_EditorVersion: 2021.2.3f1 (32358a8527b4)
+m_EditorVersion: 2022.2.6f1 (10bfa6201ced)
 m_ResolvedPackages:
+- packageId: com.unity.ai.navigation@1.1.1
+  testable: 0
+  isDirectDependency: 1
+  version: 1.1.1
+  source: 1
+  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.ai.navigation@1.1.1
+  assetPath: Packages/com.unity.ai.navigation
+  name: com.unity.ai.navigation
+  displayName: AI Navigation
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: High-level NavMesh components for building and using NavMeshes at
+    runtime and at edit time.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-exp.1
+    - 1.0.0-exp.2
+    - 1.0.0-exp.3
+    - 1.0.0-exp.4
+    - 1.1.0-pre.1
+    - 1.1.0-pre.2
+    - 1.1.1
+    compatible:
+    - 1.1.1
+    recommended: 1.1.1
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 638023206030000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ai.navigation.git
+    revision: 68f64fce84ec1c6721cae1231d5cf4003494eb08
+    path: 
+  unityLifecycle:
+    version: 1.1.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.feature.development@1.0.1
   testable: 0
   isDirectDependency: 1
@@ -41,14 +106,15 @@ m_ResolvedPackages:
     feature set. Enable support for multiple integrated development environments
     (IDE) for editing your Unity code. Get access to development tools to help you
     test and analyze your project\u2019s performance."
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.1
     compatible:
     - 1.0.1
-    verified: 1.0.1
+    recommended: 1.0.1
+    deprecated: []
   dependencies:
   - name: com.unity.ide.visualstudio
     version: default
@@ -66,9 +132,9 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.ide.visualstudio
-    version: 2.0.15
+    version: 2.0.17
   - name: com.unity.test-framework
-    version: 1.1.31
+    version: 1.1.33
   - name: com.unity.ext.nunit
     version: 1.0.6
   - name: com.unity.modules.imgui
@@ -76,17 +142,17 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
-    version: 3.0.7
+    version: 3.0.18
   - name: com.unity.ide.vscode
-    version: 1.2.4
+    version: 1.2.5
   - name: com.unity.editorcoroutines
     version: 1.0.0
   - name: com.unity.performance.profile-analyzer
     version: 1.1.1
   - name: com.unity.testtools.codecoverage
-    version: 1.0.1
+    version: 1.2.2
   - name: com.unity.settings-manager
-    version: 1.0.3
+    version: 2.0.1
   keywords: []
   registry:
     id: main
@@ -95,6 +161,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -108,12 +175,17 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.1
     nextVersion: 
-- packageId: com.unity.formats.fbx@4.1.2
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.formats.fbx@4.2.1
   testable: 0
   isDirectDependency: 1
-  version: 4.1.2
+  version: 4.2.1
   source: 1
-  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.formats.fbx@4.1.2
+  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.formats.fbx@4.2.1
   assetPath: Packages/com.unity.formats.fbx
   name: com.unity.formats.fbx
   displayName: FBX Exporter
@@ -130,7 +202,7 @@ m_ResolvedPackages:
     Autodesk\xAE Maya LT\u2122, or Autodesk\xAE 3ds Max\xAE using an artist-friendly
     interface, export Unity-ready FBX geometry and animation, and safely merge your
     changes back into those Assets to continue your work in Unity."
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -153,24 +225,26 @@ m_ResolvedPackages:
     - 4.1.0
     - 4.1.1
     - 4.1.2
+    - 4.1.3
     - 4.2.0-pre.1
     - 4.2.0
+    - 4.2.1
     - 5.0.0-pre.1
+    - 5.0.0
     compatible:
-    - 4.1.1
-    - 4.1.2
-    - 4.2.0-pre.1
-    - 4.2.0
+    - 4.2.1
     - 5.0.0-pre.1
-    verified: 4.1.2
+    - 5.0.0
+    recommended: 4.2.1
+    deprecated: []
   dependencies:
   - name: com.unity.timeline
-    version: 1.5.2
+    version: 1.7.1
   - name: com.autodesk.fbx
-    version: 4.1.1
+    version: 4.2.1
   resolvedDependencies:
   - name: com.unity.timeline
-    version: 1.7.1
+    version: 1.7.2
   - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.audio
@@ -180,7 +254,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   - name: com.autodesk.fbx
-    version: 4.1.1
+    version: 4.2.1
   keywords:
   - fbx
   - animation
@@ -194,25 +268,31 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637733605130000000
-  documentationUrl: 
+  datePublishedTicks: 638089453510000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.2/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.formats.fbx.git
-    revision: 2daae3674ab93a799fbb71611abb1440e5d0e527
+    revision: 877a978d1923ee725cad1883350d6effee574951
     path: 
   unityLifecycle:
-    version: 4.1.1
+    version: 4.2.1
     nextVersion: 
-- packageId: com.unity.ide.visualstudio@2.0.15
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.ide.visualstudio@2.0.17
   testable: 0
   isDirectDependency: 1
-  version: 2.0.15
+  version: 2.0.17
   source: 1
-  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.ide.visualstudio@2.0.15
+  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.ide.visualstudio@2.0.17
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -225,7 +305,7 @@ m_ResolvedPackages:
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -248,19 +328,17 @@ m_ResolvedPackages:
     - 2.0.14
     - 2.0.15
     - 2.0.16
+    - 2.0.17
     compatible:
-    - 2.0.11
-    - 2.0.12
-    - 2.0.14
-    - 2.0.15
-    - 2.0.16
-    verified: 2.0.16
+    - 2.0.17
+    recommended: 2.0.17
+    deprecated: []
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.1.31
+    version: 1.1.33
   - name: com.unity.ext.nunit
     version: 1.0.6
   - name: com.unity.modules.imgui
@@ -275,25 +353,31 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637841884840000000
-  documentationUrl: 
+  datePublishedTicks: 638059987360000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: ca1ece42f5a2c5484ba15a15bb975ccc1f6a1a3c
+    revision: 1f126893bfb18ea9661fb15771613e841467073c
     path: 
   unityLifecycle:
-    version: 2.0.11
+    version: 2.0.17
     nextVersion: 
-- packageId: com.unity.test-framework@1.1.31
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.test-framework@1.1.33
   testable: 0
   isDirectDependency: 1
-  version: 1.1.31
+  version: 1.1.33
   source: 1
-  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.test-framework@1.1.31
+  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.test-framework@1.1.33
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -304,7 +388,7 @@ m_ResolvedPackages:
   category: Unity Test Framework
   type: asset
   description: Test framework for running Edit mode and Play mode tests in Unity.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -344,22 +428,24 @@ m_ResolvedPackages:
     - 1.1.33
     - 1.3.0
     - 1.3.1
+    - 1.3.2
+    - 1.3.3
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
-    - 1.1.29
-    - 1.1.30
-    - 1.1.31
     - 1.1.33
     - 1.3.0
     - 1.3.1
+    - 1.3.2
+    - 1.3.3
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    verified: 1.1.33
+    recommended: 1.1.33
+    deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -384,19 +470,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637804266210000000
+  datePublishedTicks: 637938212700000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.test-framework.git
-    revision: 438b0defc147c9be5c969ca79ff03a722b4590ed
+    revision: 34a4d423d64926635eb36d3bb86276179cc186e1
     path: 
   unityLifecycle:
-    version: 1.1.29
+    version: 1.1.33
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.textmeshpro@3.0.6
   testable: 0
   isDirectDependency: 1
@@ -432,7 +524,7 @@ m_ResolvedPackages:
     Great performance. Since the geometry created by TextMeshPro
     uses two triangles per character just like Unity''s text components, this improved
     visual quality and flexibility comes at no additional performance cost.'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -519,13 +611,19 @@ m_ResolvedPackages:
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
+    - 3.2.0-pre.4
     - 4.0.0-pre.1
+    - 4.0.0-pre.2
     compatible:
     - 3.0.6
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
-    verified: 3.0.6
+    - 3.2.0-pre.4
+    - 4.0.0-pre.1
+    - 4.0.0-pre.2
+    recommended: 3.0.6
+    deprecated: []
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -549,6 +647,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637547111200000000
@@ -562,12 +661,17 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 3.0.6
     nextVersion: 
-- packageId: com.unity.timeline@1.7.1
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.timeline@1.7.2
   testable: 0
   isDirectDependency: 1
-  version: 1.7.1
+  version: 1.7.2
   source: 1
-  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.timeline@1.7.1
+  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.timeline@1.7.2
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -579,7 +683,7 @@ m_ResolvedPackages:
   type: asset
   description: Use Unity Timeline to create cinematic content, game-play sequences,
     audio sequences, and complex particle effects.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -656,18 +760,16 @@ m_ResolvedPackages:
     - 1.7.0
     - 1.7.1
     - 1.7.2
+    - 1.7.3
     - 1.8.0
+    - 1.8.1
     compatible:
-    - 1.6.2
-    - 1.6.3
-    - 1.6.4
-    - 1.7.0-pre.1
-    - 1.7.0-pre.2
-    - 1.7.0
-    - 1.7.1
     - 1.7.2
+    - 1.7.3
     - 1.8.0
-    verified: 1.6.4
+    - 1.8.1
+    recommended: 1.7.3
+    deprecated: []
   dependencies:
   - name: com.unity.modules.director
     version: 1.0.0
@@ -699,19 +801,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637824211470000000
+  datePublishedTicks: 638019579250000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-    revision: 9cec37f449d04026a6c454de9e1bf6f34672764e
+    revision: 40b193547031a6a97c1fc47f71900f6690c33c6b
     path: 
   unityLifecycle:
-    version: 1.6.2
+    version: 1.7.2
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -731,14 +839,15 @@ m_ResolvedPackages:
     and applications. It is a GameObject-based UI system that uses Components and
     the Game View to arrange, position, and style user interfaces. \u200B You cannot
     use Unity UI to create or change user interfaces in the Unity Editor."
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
@@ -761,6 +870,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -774,6 +884,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -791,14 +906,15 @@ m_ResolvedPackages:
   type: module
   description: 'The AI module implements the path finding features in Unity. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -809,6 +925,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -822,6 +939,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.androidjni@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -838,14 +960,15 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'AndroidJNI module allows you to call Java code. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AndroidJNIModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -856,6 +979,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -869,6 +993,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.animation@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -886,14 +1015,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Animation module implements Unity''s animation system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AnimationModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -904,6 +1034,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -917,6 +1048,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.assetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -934,14 +1070,15 @@ m_ResolvedPackages:
   type: module
   description: 'The AssetBundle module implements the AssetBundle class and related
     APIs to load data from AssetBundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AssetBundleModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -952,6 +1089,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -965,6 +1103,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.audio@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -982,14 +1125,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Audio module implements Unity''s audio system. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.AudioModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1000,6 +1144,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1013,6 +1158,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.cloth@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1030,14 +1180,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Cloth module implements cloth physics simulation through the
     Cloth component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ClothModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -1052,6 +1203,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1065,6 +1217,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.director@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1082,14 +1239,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Director module implements the PlayableDirector class. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.DirectorModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.audio
     version: 1.0.0
@@ -1108,6 +1266,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1121,6 +1280,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.imageconversion@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1139,14 +1303,15 @@ m_ResolvedPackages:
   description: 'The ImageConversion module implements the ImageConversion class which
     provides helper methods to convert images from and to PNG, JPEG or EXR formats.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ImageConversionModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1157,6 +1322,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1170,6 +1336,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.imgui@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1187,14 +1358,15 @@ m_ResolvedPackages:
   type: module
   description: 'The IMGUI module provides Unity''s immediate mode GUI solution for
     creating in-game and editor user interfaces. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.IMGUIModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1205,6 +1377,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1218,6 +1391,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.jsonserialize@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1235,14 +1413,15 @@ m_ResolvedPackages:
   type: module
   description: 'The JSONSerialize module provides the JsonUtility class which lets
     you serialize Unity Objects to JSON format. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.JSONSerializeModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1253,6 +1432,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1266,6 +1446,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.particlesystem@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1283,14 +1468,15 @@ m_ResolvedPackages:
   type: module
   description: 'The ParticleSystem module implements Unity''s Particle System. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.ParticleSystemModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1301,6 +1487,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1314,6 +1501,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.physics@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1331,14 +1523,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Physics module implements 3D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.PhysicsModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1349,6 +1542,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1362,6 +1556,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.physics2d@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1379,14 +1578,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Physics2d module implements 2D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.Physics2DModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1397,6 +1597,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1410,6 +1611,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.screencapture@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1427,14 +1633,15 @@ m_ResolvedPackages:
   type: module
   description: 'The ScreenCapture module provides functionality to take screen shots
     using the ScreenCapture class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ScreenCaptureModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.imageconversion
     version: 1.0.0
@@ -1449,6 +1656,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1462,6 +1670,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.terrain@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1479,14 +1692,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Terrain module implements Unity''s Terrain rendering engine available
     through the Terrain component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1497,6 +1711,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1510,6 +1725,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.terrainphysics@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1527,14 +1747,15 @@ m_ResolvedPackages:
   type: module
   description: 'The TerrainPhysics module connects the Terrain and Physics modules
     by implementing the TerrainCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainPhysicsModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -1553,6 +1774,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1566,6 +1788,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.tilemap@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1582,14 +1809,15 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'The Tilemap module implements the Tilemap class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TilemapModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.physics2d
     version: 1.0.0
@@ -1604,6 +1832,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1617,6 +1846,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.ui@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1634,14 +1868,15 @@ m_ResolvedPackages:
   type: module
   description: 'The UI module implements basic components required for Unity''s UI
     system Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1652,6 +1887,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1665,6 +1901,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.uielements@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1682,14 +1923,15 @@ m_ResolvedPackages:
   type: module
   description: 'The UIElements module implements the UIElements retained mode UI
     framework. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIElementsModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
@@ -1697,16 +1939,12 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
-  - name: com.unity.modules.uielementsnative
-    version: 1.0.0
   resolvedDependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.uielementsnative
     version: 1.0.0
   keywords: []
   registry:
@@ -1716,6 +1954,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1729,6 +1968,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.umbra@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1746,14 +1990,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Umbra module implements Unity''s occlusion culling system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.UmbraModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1764,6 +2009,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1777,6 +2023,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.unityanalytics@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1794,14 +2045,15 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityAnalytics module implements APIs required to use Unity Analytics.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityAnalyticsModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -1820,6 +2072,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1833,6 +2086,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequest@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1850,14 +2108,15 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequest module lets you communicate with http services.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1868,6 +2127,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1881,6 +2141,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequestassetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1898,14 +2163,15 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestAssetBundle module provides the DownloadHandlerAssetBundle
     class to use UnityWebRequest to download Asset Bundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAssetBundleModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.assetbundle
     version: 1.0.0
@@ -1924,6 +2190,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1937,6 +2204,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequestaudio@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1954,14 +2226,15 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestAudio module provides the DownloadHandlerAudioClip
     class to use UnityWebRequest to download AudioClips. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAudioModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -1980,6 +2253,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1993,6 +2267,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequesttexture@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2010,14 +2289,15 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestTexture module provides the DownloadHandlerTexture
     class to use UnityWebRequest to download Textures. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestTextureModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2036,6 +2316,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2049,6 +2330,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequestwww@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2066,14 +2352,15 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestWWW module implements the legacy WWW lets you
     communicate with http services. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestWWWModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2108,6 +2395,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2121,6 +2409,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.vehicles@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2138,14 +2431,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Vehicles module implements vehicle physics simulation through
     the WheelCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VehiclesModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -2160,6 +2454,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2173,6 +2468,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.video@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2190,14 +2490,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Video module lets you play back video files in your content.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VideoModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.audio
     version: 1.0.0
@@ -2220,6 +2521,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2233,6 +2535,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.vr@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2250,14 +2557,15 @@ m_ResolvedPackages:
   type: module
   description: 'The VR module implements support for virtual reality devices in Unity.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VRModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
@@ -2282,6 +2590,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2295,6 +2604,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.wind@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2312,14 +2626,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Wind module implements the WindZone component which can affect
     terrain rendering and particle simulations. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.WindModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -2330,6 +2645,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2343,6 +2659,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.xr@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2360,14 +2681,15 @@ m_ResolvedPackages:
   type: module
   description: 'The XR module contains the VR and AR related platform support functionality.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.XRModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -2390,6 +2712,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2403,6 +2726,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.modules.subsystems@1.0.0
   testable: 0
   isDirectDependency: 0
@@ -2420,14 +2748,15 @@ m_ResolvedPackages:
   type: module
   description: 'The Subsystem module contains the definitions and runtime support
     for general subsystems in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
@@ -2442,6 +2771,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2455,65 +2785,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 
     nextVersion: 
-- packageId: com.unity.modules.uielementsnative@1.0.0
-  testable: 0
-  isDirectDependency: 0
-  version: 1.0.0
-  source: 2
-  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
-  assetPath: Packages/com.unity.modules.uielementsnative
-  name: com.unity.modules.uielementsnative
-  displayName: UIElements Native
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: module
-  description: 
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 1.0.0
-    compatible:
-    - 1.0.0
-    verified: 1.0.0
-  dependencies:
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.ext.nunit@1.0.6
   testable: 0
   isDirectDependency: 0
@@ -2531,7 +2807,7 @@ m_ResolvedPackages:
   type: asset
   description: Custom version of the nunit package build to work with Unity. Used
     by the Unity Test Framework.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2547,7 +2823,8 @@ m_ResolvedPackages:
     - 1.0.6
     - 2.0.2
     - 2.0.3
-    verified: 1.0.6
+    recommended: 1.0.6
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -2561,6 +2838,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637429759280000000
@@ -2574,12 +2852,17 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.6
     nextVersion: 
-- packageId: com.autodesk.fbx@4.1.1
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.autodesk.fbx@4.2.1
   testable: 0
   isDirectDependency: 0
-  version: 4.1.1
+  version: 4.2.1
   source: 1
-  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.autodesk.fbx@4.1.1
+  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.autodesk.fbx@4.2.1
   assetPath: Packages/com.autodesk.fbx
   name: com.autodesk.fbx
   displayName: Autodesk FBX SDK for Unity
@@ -2591,7 +2874,7 @@ m_ResolvedPackages:
   type: 
   description: "This package provides Unity C# bindings to the Autodesk\xAE FBX\xAE
     SDK."
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2612,10 +2895,11 @@ m_ResolvedPackages:
     - 4.1.0
     - 4.1.1
     - 4.2.0-pre.1
+    - 4.2.1
     compatible:
-    - 4.1.1
-    - 4.2.0-pre.1
-    verified: 4.1.1
+    - 4.2.1
+    recommended: 4.2.1
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -2631,25 +2915,31 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637668642230000000
-  documentationUrl: 
+  datePublishedTicks: 0
+  documentationUrl: https://docs.unity3d.com/Packages/com.autodesk.fbx@4.2/manual/index.html
   hasRepository: 1
   repository:
     type: git
-    url: git+https://github.com/Unity-Technologies/com.autodesk.fbx.git
-    revision: b6cd1211ff8824752e3dcbf05f426bac266606a0
+    url: https://github.com/Unity-Technologies/com.autodesk.fbx.git
+    revision: 0d5f364e4c87bd0b741293e1abd178b456e7338c
     path: 
   unityLifecycle:
-    version: 4.1.1
+    version: 4.2.1
     nextVersion: 
-- packageId: com.unity.ide.rider@3.0.7
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.ide.rider@3.0.18
   testable: 0
   isDirectDependency: 0
-  version: 3.0.7
+  version: 3.0.18
   source: 1
-  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.ide.rider@3.0.7
+  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.ide.rider@3.0.18
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -2662,7 +2952,7 @@ m_ResolvedPackages:
   description: The JetBrains Rider Editor package provides an integration for using
     the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
     .csproj files for code completion and auto-discovery of installations.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2698,16 +2988,12 @@ m_ResolvedPackages:
     - 3.0.14
     - 3.0.15
     - 3.0.16
+    - 3.0.17
+    - 3.0.18
     compatible:
-    - 3.0.7
-    - 3.0.9
-    - 3.0.10
-    - 3.0.12
-    - 3.0.13
-    - 3.0.14
-    - 3.0.15
-    - 3.0.16
-    verified: 3.0.16
+    - 3.0.18
+    recommended: 3.0.18
+    deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -2722,25 +3008,31 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637572251600000000
-  documentationUrl: 
+  datePublishedTicks: 638088746970000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: 3007c42a679bbe2c082c276e8d79279110964553
+    revision: b40b39e6834c2915637f431d002d1f3dd8ec9ce5
     path: 
   unityLifecycle:
-    version: 3.0.7
+    version: 3.0.18
     nextVersion: 
-- packageId: com.unity.ide.vscode@1.2.4
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.ide.vscode@1.2.5
   testable: 0
   isDirectDependency: 0
-  version: 1.2.4
+  version: 1.2.5
   source: 1
-  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.ide.vscode@1.2.4
+  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.ide.vscode@1.2.5
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -2753,7 +3045,7 @@ m_ResolvedPackages:
   description: Code editor integration for supporting Visual Studio Code as code
     editor for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2771,9 +3063,9 @@ m_ResolvedPackages:
     - 1.2.4
     - 1.2.5
     compatible:
-    - 1.2.4
     - 1.2.5
-    verified: 1.2.5
+    recommended: 1.2.5
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -2784,19 +3076,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637660806170000000
+  datePublishedTicks: 637800255360000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
-    url: git+https://github.com/Unity-Technologies/com.unity.ide.vscode.git
-    revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
+    url: https://github.com/Unity-Technologies/com.unity.ide.vscode.git
+    revision: b0740c80bfc2440527c317109f7c3d9100132722
     path: 
   unityLifecycle:
-    version: 1.2.4
+    version: 1.2.5
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.editorcoroutines@1.0.0
   testable: 0
   isDirectDependency: 0
@@ -2815,7 +3113,7 @@ m_ResolvedPackages:
   description: 'The editor coroutines package allows developers to start constructs
     similar to Unity''s monobehaviour based coroutines within the editor using abitrary
     objects. '
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2828,7 +3126,8 @@ m_ResolvedPackages:
     - 1.0.0
     compatible:
     - 1.0.0
-    verified: 1.0.0
+    recommended: 1.0.0
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -2842,6 +3141,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637232611380000000
@@ -2855,6 +3155,11 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.performance.profile-analyzer@1.1.1
   testable: 0
   isDirectDependency: 0
@@ -2875,7 +3180,7 @@ m_ResolvedPackages:
     in the Profiler.\n\nMain features: \n\u25AA Multi-frame analysis of a single
     set of Profiler CPU data \n\u25AA Comparison of two multi-frame profile scans
     \n\n"
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2892,9 +3197,12 @@ m_ResolvedPackages:
     - 1.1.0-pre.2
     - 1.1.0
     - 1.1.1
+    - 1.2.2
     compatible:
     - 1.1.1
-    verified: 1.1.1
+    - 1.2.2
+    recommended: 1.1.1
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -2905,6 +3213,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637705021060000000
@@ -2918,12 +3227,17 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.1.1
     nextVersion: 
-- packageId: com.unity.testtools.codecoverage@1.0.1
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.testtools.codecoverage@1.2.2
   testable: 0
   isDirectDependency: 0
-  version: 1.0.1
+  version: 1.2.2
   source: 1
-  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1
+  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -2937,7 +3251,7 @@ m_ResolvedPackages:
     automated tests. Additionally, the Code Coverage package offers a Coverage Recording
     feature which allows capturing coverage data on demand, for manual testing or
     when there are no automated tests in the project.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2970,20 +3284,9 @@ m_ResolvedPackages:
     - 1.2.1
     - 1.2.2
     compatible:
-    - 1.0.1
-    - 1.1.0
-    - 1.1.1
-    - 1.2.0-exp.1
-    - 1.2.0-exp.2
-    - 1.2.0-exp.3
-    - 1.2.0-exp.4
-    - 1.2.0-exp.5
-    - 1.2.0-exp.6
-    - 1.2.0-exp.7
-    - 1.2.0
-    - 1.2.1
     - 1.2.2
-    verified: 1.0.1
+    recommended: 1.2.2
+    deprecated: []
   dependencies:
   - name: com.unity.test-framework
     version: 1.0.16
@@ -2991,7 +3294,7 @@ m_ResolvedPackages:
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.1.31
+    version: 1.1.33
   - name: com.unity.ext.nunit
     version: 1.0.6
   - name: com.unity.modules.imgui
@@ -2999,7 +3302,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.settings-manager
-    version: 1.0.3
+    version: 2.0.1
   keywords:
   - test
   - coverage
@@ -3012,25 +3315,31 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637594767130000000
+  datePublishedTicks: 638047147810000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git
-    revision: 2777556fc6ade4006a02ea7febbae1dd3257eb7d
+    revision: 4178e047a15e206f715d23af69b02acd367bb000
     path: 
   unityLifecycle:
-    version: 1.0.1
+    version: 1.2.2
     nextVersion: 
-- packageId: com.unity.settings-manager@1.0.3
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.settings-manager@2.0.1
   testable: 0
   isDirectDependency: 0
-  version: 1.0.3
+  version: 2.0.1
   source: 1
-  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.settings-manager@1.0.3
+  resolvedPath: D:\Unity Projects\Unity_VRoid_Lipsync\Lipsync\Library\PackageCache\com.unity.settings-manager@2.0.1
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
@@ -3042,7 +3351,7 @@ m_ResolvedPackages:
   type: asset
   description: A framework for making any serializable field a setting, complete
     with a pre-built settings interface.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -3055,10 +3364,9 @@ m_ResolvedPackages:
     - 2.0.0
     - 2.0.1
     compatible:
-    - 1.0.3
-    - 2.0.0
     - 2.0.1
-    verified: 1.0.3
+    recommended: 2.0.1
+    deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -3069,16 +3377,22 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637300096300000000
+  datePublishedTicks: 637744099390000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
-    url: git+https://github.com/Unity-Technologies/com.unity.settings-manager.git
-    revision: 473664ccba1496294b741cf169740a5d54b3d0b6
+    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
+    revision: 9b7c12d04ef880168151c127fd6b37b5931197dc
     path: 
   unityLifecycle:
-    version: 1.0.3
+    version: 2.0.1
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 

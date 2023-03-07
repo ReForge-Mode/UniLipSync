@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor.UIElements;
+using UnityEngine.UIElements;
 
 namespace UnityEditor.UI
 {
@@ -9,14 +11,20 @@ namespace UnityEditor.UI
     /// </summary>
     public class SpriteStateDrawer : PropertyDrawer
     {
+        const string kHighlightedSprite = "m_HighlightedSprite";
+        const string kPressedSprite = "m_PressedSprite";
+        const string kSelectedSprite = "m_SelectedSprite";
+        const string kDisabledSprite = "m_DisabledSprite";
+        const string kVisualElementName = "SpriteState";
+
         public override void OnGUI(Rect rect, SerializedProperty prop, GUIContent label)
         {
             Rect drawRect = rect;
             drawRect.height = EditorGUIUtility.singleLineHeight;
-            SerializedProperty highlightedSprite = prop.FindPropertyRelative("m_HighlightedSprite");
-            SerializedProperty pressedSprite = prop.FindPropertyRelative("m_PressedSprite");
-            SerializedProperty selectedSprite = prop.FindPropertyRelative("m_SelectedSprite");
-            SerializedProperty disabledSprite = prop.FindPropertyRelative("m_DisabledSprite");
+            SerializedProperty highlightedSprite = prop.FindPropertyRelative(kHighlightedSprite);
+            SerializedProperty pressedSprite = prop.FindPropertyRelative(kPressedSprite);
+            SerializedProperty selectedSprite = prop.FindPropertyRelative(kSelectedSprite);
+            SerializedProperty disabledSprite = prop.FindPropertyRelative(kDisabledSprite);
 
             EditorGUI.PropertyField(drawRect, highlightedSprite);
             drawRect.y += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
@@ -31,6 +39,27 @@ namespace UnityEditor.UI
         public override float GetPropertyHeight(SerializedProperty prop, GUIContent label)
         {
             return 4 * EditorGUIUtility.singleLineHeight + 3 * EditorGUIUtility.standardVerticalSpacing;
+        }
+
+        public override VisualElement CreatePropertyGUI(SerializedProperty property)
+        {
+            var container = new VisualElement();
+            container.name = kVisualElementName;
+
+            var properties = new[]
+            {
+                property.FindPropertyRelative(kHighlightedSprite),
+                property.FindPropertyRelative(kPressedSprite),
+                property.FindPropertyRelative(kSelectedSprite),
+                property.FindPropertyRelative(kDisabledSprite)
+            };
+
+            foreach (var prop in properties)
+            {
+                container.Add(new PropertyField(prop));
+            }
+
+            return container;
         }
     }
 }

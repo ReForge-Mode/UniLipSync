@@ -158,7 +158,12 @@ namespace UnityEditor.UI
         /// </summary>
         protected void RaycastControlsGUI()
         {
+            EditorGUI.BeginChangeCheck();
             EditorGUILayout.PropertyField(m_RaycastTarget);
+            if (EditorGUI.EndChangeCheck() && target is Graphic graphic)
+            {
+                graphic.SetRaycastDirty();
+            }
 
             float height = EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
             if (m_ShowPadding)

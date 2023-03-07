@@ -46,7 +46,7 @@ An **Input Field** is a way to make the text of a [Text Control](script-Text.md)
 
 |****Selection Color**** ||The background color of the selected portion of text.|
 
-|****Hide Mobile Input** (iOS only)** ||Hides the native input field attached to the onscreen keyboard on mobile devices. Note that this only works on iOS devices.|
+|****Hide Mobile Input**** ||Hides the native input field attached to the onscreen keyboard on mobile devices. Note that this only works on iOS and Android devices.|
 | | | |
 
 ## Events
@@ -67,3 +67,7 @@ The _Text_ property of the Text control itself will change as the user types and
 ## Hints
 
 * To obtain the text of the Input Field, use the text property on the InputField component itself, not the text property of the Text component that displays the text. The text property of the Text component may be cropped or may consist of asterisks for passwords.
+
+## Limitations
+
+* On iOS when an external keyboard is connected, the onscreen keyboard will be hidden by the OS but the caret will not appear in the InputField. This is due to a lack of external keyboard support on iOS 13 and older.

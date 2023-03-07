@@ -335,6 +335,16 @@ namespace UnityEngine.UI
             instance.InternalUnRegisterCanvasElementForGraphicRebuild(element);
         }
 
+        /// <summary>
+        /// Disable the given element from both the graphic and the layout rebuild lists.
+        /// </summary>
+        /// <param name="element"></param>
+        public static void DisableCanvasElementForRebuild(ICanvasElement element)
+        {
+            instance.InternalDisableCanvasElementForLayoutRebuild(element);
+            instance.InternalDisableCanvasElementForGraphicRebuild(element);
+        }
+
         private void InternalUnRegisterCanvasElementForLayoutRebuild(ICanvasElement element)
         {
             if (m_PerformingLayoutUpdate)
@@ -356,6 +366,29 @@ namespace UnityEngine.UI
             }
             element.GraphicUpdateComplete();
             instance.m_GraphicRebuildQueue.Remove(element);
+        }
+
+        private void InternalDisableCanvasElementForLayoutRebuild(ICanvasElement element)
+        {
+            if (m_PerformingLayoutUpdate)
+            {
+                Debug.LogError(string.Format("Trying to remove {0} from rebuild list while we are already inside a rebuild loop. This is not supported.", element));
+                return;
+            }
+
+            element.LayoutComplete();
+            instance.m_LayoutRebuildQueue.DisableItem(element);
+        }
+
+        private void InternalDisableCanvasElementForGraphicRebuild(ICanvasElement element)
+        {
+            if (m_PerformingGraphicUpdate)
+            {
+                Debug.LogError(string.Format("Trying to remove {0} from rebuild list while we are already inside a rebuild loop. This is not supported.", element));
+                return;
+            }
+            element.GraphicUpdateComplete();
+            instance.m_GraphicRebuildQueue.DisableItem(element);
         }
 
         /// <summary>

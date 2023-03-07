@@ -12,24 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f4d49aef3a6ca4ab7b56758cacc550, type: 3}
   m_Name: VisemeGroups
   m_EditorClassIdentifier: 
-  visemeGroup:
+  visemeGroupList:
   - name: a
     ipa:
     - "\u0251"
     - a
     - "\u0252"
-    start:
+    blendshapeValues:
       a: 100
       i: 0
       u: 30
       e: 0
       o: 40
-    end:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
-      o: 0
   - name: ah
     ipa:
     - "\u0259"
@@ -37,14 +31,8 @@ MonoBehaviour:
     - "\u025B"
     - "\xE6"
     - "\u0259l"
-    start:
+    blendshapeValues:
       a: 100
-      i: 0
-      u: 0
-      e: 0
-      o: 0
-    end:
-      a: 0
       i: 0
       u: 0
       e: 0
@@ -66,31 +54,19 @@ MonoBehaviour:
     - "\u028D"
     - "\u0250"
     - "\u028A\u0259"
-    start:
+    blendshapeValues:
       a: 40
       i: 0
       u: 75
       e: 50
-      o: 0
-    end:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
       o: 0
   - name: ih
     ipa:
     - "\u026A"
     - "a\u026A"
     - "\u0268"
-    start:
+    blendshapeValues:
       a: 50
-      i: 0
-      u: 0
-      e: 0
-      o: 0
-    end:
-      a: 0
       i: 0
       u: 0
       e: 0
@@ -103,17 +79,11 @@ MonoBehaviour:
     - "\u027E"
     - "\u027E\u0303"
     - "\u025C"
-    start:
+    blendshapeValues:
       a: 0
       i: 0
       u: 100
       e: 40
-      o: 0
-    end:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
       o: 0
   - name: p
     ipa:
@@ -121,13 +91,7 @@ MonoBehaviour:
     - m
     - "m\u0329"
     - b
-    start:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
-      o: 0
-    end:
+    blendshapeValues:
       a: 0
       i: 0
       u: 0
@@ -153,48 +117,30 @@ MonoBehaviour:
     - l
     - "l\u0329"
     - "i\u0259"
-    start:
+    blendshapeValues:
       a: 15
       i: 20
       u: 0
       e: 0
       o: 25
-    end:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
-      o: 0
   - name: j
     ipa:
     - "t\u0283"
     - "d\u0292"
     - "\u0283"
-    start:
+    blendshapeValues:
       a: 0
       i: 25
       u: 55
       e: 0
       o: 30
-    end:
-      a: 0
-      i: 0
-      u: 0
-      e: 0
-      o: 0
   - name: f
     ipa:
     - f
     - v
-    start:
+    blendshapeValues:
       a: 0
       i: 30
       u: 30
-      e: 0
-      o: 0
-    end:
-      a: 0
-      i: 0
-      u: 0
       e: 0
       o: 0

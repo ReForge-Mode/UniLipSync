@@ -121,6 +121,17 @@ namespace UnityEngine.UI.Tests
         }
 
         [Test]
+        public void RaycastOverImage_IgnoresDisabledCanvasGroup()
+        {
+            var canvasGroup = m_CanvasRoot.AddComponent<CanvasGroup>();
+            canvasGroup.blocksRaycasts = false;
+            canvasGroup.enabled = false;
+
+            bool raycast = m_Image.Raycast(new Vector2(1000, 1000), m_camera);
+            Assert.IsTrue(raycast);
+        }
+
+        [Test]
         public void SettingSpriteMarksAllAsDirty()
         {
             m_Image.sprite = m_Sprite;

@@ -102,7 +102,7 @@ namespace UnityEngine.UI
         /// <param name="graphic">The Graphic to dissociate from the Canvas.</param>
         public static void UnregisterGraphicForCanvas(Canvas c, Graphic graphic)
         {
-            if (c == null)
+            if (c == null || graphic == null)
                 return;
 
             IndexedSet<Graphic> graphics;
@@ -110,7 +110,7 @@ namespace UnityEngine.UI
             {
                 graphics.Remove(graphic);
 
-                if (graphics.Count == 0)
+                if (graphics.Capacity == 0)
                     instance.m_Graphics.Remove(c);
 
                 UnregisterRaycastGraphicForCanvas(c, graphic);
@@ -124,7 +124,7 @@ namespace UnityEngine.UI
         /// <param name="graphic">The Graphic to dissociate from the Canvas.</param>
         public static void UnregisterRaycastGraphicForCanvas(Canvas c, Graphic graphic)
         {
-            if (c == null || !graphic.raycastTarget)
+            if (c == null || graphic == null)
                 return;
 
             IndexedSet<Graphic> graphics;
@@ -133,6 +133,48 @@ namespace UnityEngine.UI
                 graphics.Remove(graphic);
 
                 if (graphics.Count == 0)
+                    instance.m_RaycastableGraphics.Remove(c);
+            }
+        }
+
+        /// <summary>
+        /// Disables a Graphic from a Canvas, disabling this association from the registry.
+        /// </summary>
+        /// <param name="c">The Canvas to dissociate from the Graphic.</param>
+        /// <param name="graphic">The Graphic to dissociate from the Canvas.</param>
+        public static void DisableGraphicForCanvas(Canvas c, Graphic graphic)
+        {
+            if (c == null)
+                return;
+
+            IndexedSet<Graphic> graphics;
+            if (instance.m_Graphics.TryGetValue(c, out graphics))
+            {
+                graphics.DisableItem(graphic);
+
+                if (graphics.Capacity == 0)
+                    instance.m_Graphics.Remove(c);
+
+                DisableRaycastGraphicForCanvas(c, graphic);
+            }
+        }
+
+        /// <summary>
+        /// Disables the raycast for a Graphic from a Canvas, disabling this association from the registry.
+        /// </summary>
+        /// <param name="c">The Canvas to dissociate from the Graphic.</param>
+        /// <param name="graphic">The Graphic to dissociate from the Canvas.</param>
+        public static void DisableRaycastGraphicForCanvas(Canvas c, Graphic graphic)
+        {
+            if (c == null || !graphic.raycastTarget)
+                return;
+
+            IndexedSet<Graphic> graphics;
+            if (instance.m_RaycastableGraphics.TryGetValue(c, out graphics))
+            {
+                graphics.DisableItem(graphic);
+
+                if (graphics.Capacity == 0)
                     instance.m_RaycastableGraphics.Remove(c);
             }
         }
