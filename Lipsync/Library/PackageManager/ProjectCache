@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638135284448807913
-    m_Hash: 3584490246
+      ticks: 638138047796787377
+    m_Hash: 2124139254
   m_LockFileStatus:
     m_FilePath: D:/Unity Projects/Unity_VRoid_Lipsync/Lipsync/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638135285988224654
-    m_Hash: 1087545282
+      ticks: 638138047796797370
+    m_Hash: 2067762676
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -2871,7 +2871,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: "This package provides Unity C# bindings to the Autodesk\xAE FBX\xAE
     SDK."
   status: 0
@@ -2894,10 +2894,16 @@ m_ResolvedPackages:
     - 4.1.0-pre.1
     - 4.1.0
     - 4.1.1
+    - 4.1.2
     - 4.2.0-pre.1
+    - 4.2.0
     - 4.2.1
+    - 5.0.0-pre.1
+    - 5.0.0
     compatible:
     - 4.2.1
+    - 5.0.0-pre.1
+    - 5.0.0
     recommended: 4.2.1
     deprecated: []
   dependencies: []
@@ -2916,9 +2922,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638089453470000000
   documentationUrl: https://docs.unity3d.com/Packages/com.autodesk.fbx@4.2/manual/index.html
   hasRepository: 1
   repository:
