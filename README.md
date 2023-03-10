@@ -5,7 +5,7 @@ This tool requires the .phoneme files output from <a href= "https://github.com/F
 
 To download the standalone final product go to this link: https://ko-fi.com/s/45ee02510b
 
-<img src="https://github.com/FFaUniHan/Unity_VRoid_Expression_Maker/blob/main/Demo.gif" width=100% height=100%>
+<img src="https://github.com/FFaUniHan/UniLipSync/blob/main/Demo.jpg" width=100% height=100%>
 
 
 # Tutorial Video
