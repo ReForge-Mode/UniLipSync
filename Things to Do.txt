@@ -1,6 +1,0 @@
-THINGS TO DO
-- There are still some problems with a lot of phoneme sequentially
-
-Next to do:
-- Documentation, flow diagram
-- Make video
