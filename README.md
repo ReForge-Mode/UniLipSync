@@ -11,7 +11,7 @@ To download the standalone final product go to this link: https://ko-fi.com/s/45
 # Tutorial Video
 Here are some explanations how the application works in a video form:
 
-[![Create Custom VRoid Facial Expressions for FREE](https://github.com/FFaUniHan/Unity_VRoid_Expression_Maker/blob/main/Video.jpg)](https://youtu.be/zbqbPpbA-9c "Create Custom VRoid Facial Expressions for FREE)")
+[![Free Lipsync Tools for Unity!](https://github.com/FFaUniHan/UniLipSync/blob/main/Video.jpg)](https://youtu.be/szBCZ4i4lfo "Free Lipsync Tools for Unity!)")
 
 
 
