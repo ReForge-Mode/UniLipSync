@@ -1,4 +1,4 @@
-# Free Unity Lipsync Tool
+# UniLipSync - Free Unity Lipsync Tool
 Load your phoneme files and generate the lipsync animation from your recorded audio files. No video or webcam needed!
 
 This tool requires the .phoneme files output from <a href= "https://github.com/FFaUniHan/Radish_Tools_Phoneme_Extractor">Radish Tool Phoneme Extractor</a>
